@@ -1,5 +1,0 @@
-- name: Demo on First Playbook
-  hosts: all
-  tasks:
-        -  ansible.builtin.debug:
-           msg: "Hello World"
