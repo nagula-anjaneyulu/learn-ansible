@@ -20,6 +20,7 @@
     - name: Print URL
       ansible.builtin.debug:
        msg: URL - {{ URL }}
+#var_files does not support task level, it is for play level only
 
 - name: Demo On Task level Variables
   hosts: all
@@ -30,3 +31,10 @@
         vars:
           URL: task .exmaple.com
   #only that task have that variable,other tasks cannot access it
+
+- name: variable from roles
+  hosts: all
+  vars:
+    URL_PLAY: play.example.com
+  roles:
+    - sample
