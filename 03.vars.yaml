@@ -11,7 +11,6 @@
   #quotes are mandatory if value starts with a variable , meaning
   #msg: {{ URL }} < - This requires quoting
   #msg: URL - {{ URL }} < - This doesnot requires quoting
-
     - name: Demo On Task level Variables
       hosts: all
       tasks:
