@@ -1,6 +1,6 @@
-- name: Demo On Playbook Variables
+- name: Demo On Play level Variables
   hosts: all
-  Vars:
+  vars:
     URL: play.exmaple.com
   tasks:
     - name: Print URL
