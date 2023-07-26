@@ -12,12 +12,12 @@
   #msg: {{ URL }} < - This requires quoting
   #msg: URL - {{ URL }} < - This doesnot requires quoting
 
- - name: Demo On Task level Variables
-   hosts: all
-  tasks:
+    - name: Demo On Task level Variables
+      hosts: all
+      tasks:
         - name: Print URL
           ansible.builtin.debug:
             msg: URL - {{ URL }}
-   vars:
+      vars:
         URL: play.exmaple.com
   #only that task have that variable,other tasks cannot access it
