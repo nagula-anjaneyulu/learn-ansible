@@ -1,0 +1,7 @@
+- name: print a parameter
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: print a parameter
+      ansible.builtin.debug:
+        msg: parameter -
